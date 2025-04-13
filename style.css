@@ -1,0 +1,70 @@
+body {
+    background-color: #CCCCCC;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 900px;
+}
+
+#game-title {  /* Стили для заголовка */
+    font-size: 5em;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+
+#game-board {
+    width: 900px;
+    height: 900px;
+    background-color: #D6EAF8;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    cursor: crosshair;
+}
+
+#player {
+    width: 20px;
+    height: 20px;
+    background-color: #3498DB;
+    position: absolute;
+    top: 440px;
+    left: 440px;
+}
+
+#menu {
+    width: 200px;
+    height: 900px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.block-option {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    cursor: pointer;
+    color: inherit;
+    background-color: white;
+}
+
+.block-option:hover {
+    opacity: 0.8;
+}
+
+.placed-block {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
